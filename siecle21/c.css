@@ -50,26 +50,47 @@ body{
     z-index: -1; 
 } 
 
-
-.container{
+.container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
-    height: 690px;
+    width: 600px;
+    height: 680px;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
+    overflow: hidden; /* Ensures no content overflows outside the container */
 }
+
+
+
+.content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(32, 32, 32, 0.5);
+    padding: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.des {
+    font-size: 1rem;
+}
+
 
 
 
 
 .container .slide .item{
     width: 300px;
-    height: 250px;
+    height: 190px;
     position: fixed;
-    top: 50%;
+    top: 85%;
     transform: translate(0, -50%);
     border-radius: 30px;
     box-shadow: 0 10px 90px #0e0e0e;
