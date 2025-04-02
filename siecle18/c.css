@@ -66,16 +66,18 @@ body{
 
 .content {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    width: 60px;
+    top: 100px;
+    left: 50px;
     color: white;
-    background-color: rgba(32, 32, 32, 0.5);
+    background-color: rgba(0, 0, 0, 0.458);
     padding: 10px;
 }
 
 .name {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-family: "Amiri", serif;
+  font-style: italic   ;
+  color: #8a8a39;
 }
 
 .des {
