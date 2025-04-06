@@ -395,7 +395,7 @@ section{
     width:100%;
     height:100vh ;
     padding: 150px 100px 50px 100px;
-    background: black;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     transition: 0.5s;
@@ -407,11 +407,11 @@ section{
 
 .video-slide {
     position: absolute;
-    left: -10%;
-    top: 50%;
+    left: -100%;
+    top: 26%;
     transform: translateY(-46%) translateX(99%) ;
-    width: 56%;
-    height: 80%;
+    width: 100%;
+    height: 50%;
     object-fit: cover;
     filter: none;
 }
@@ -423,24 +423,96 @@ section{
     padding: 100px;
     max-width: 1200px;
     margin: auto;
-    z-index: 000;
+    z-index: 000;    
 }
 
-.apropos-text {
+.apropos-text1 {
+    position: absolute;
     z-index: 000;
-    width: 44%;
-    left: 0%;
-    text-align: left;
+    width: 30%;
+    left: 17%;
+    text-align: left;   
+    top: 59%; 
+
+}
+.apropos-text2 {
+    position: absolute;
+    z-index: 000;
+    width: 30%;
+    left:54%;
+    text-align: left;   
+    top: 59%; 
+
 }
 
 
-.apropos-text p {
-    color: white;
+
+.apropos-text1 p {
+    color: rgba(255, 255, 255, 0.768);
     font-style: italic   ;
-    font-family: "Amiri", serif;
-    font-size: 23px;    
+    font-family: "robot", serif;
+    font-size: 21px;    
     line-height: 1.4;
 }
+
+.apropos-text2 p {
+    color: rgba(255, 255, 255, 0.768);
+    font-style: italic   ;
+    font-family: "Robot", serif;
+    font-size: 21px;    
+    line-height: 1.4;
+}
+.apropos-text2 .content-btn{
+    position: absolute;
+    left: 30%;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 20px ;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom ,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+    ),
+    radial-gradient(
+        ellipse farthest-corner at left top ,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+    ) ;
+}
+
+.apropos-text2 .content-btn:hover{
+    background: radial-gradient(
+        ellipse farthest-corner at left top ,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+    ),
+    radial-gradient(
+        ellipse farthest-corner at right bottom ,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+    ) ;
+}
+
+
+
+
 
 section::-webkit-scrollbar{
     width: 0 !important;
