@@ -22,50 +22,79 @@
 <body>
     <div class="banner ">
         </div>
-
+        <audio controls id="bgMusic" src="/musique/cc.mp3" autoplay loop hidden>
+          
+        </audio>  
+        <div style="display: flex; flex-direction: column; width: 100px; height: 50%;">
+          <button onclick="playMusic()">Play Music</button>
+          <button onclick="stopMusic()">Stop Music</button>
+        </div>
 
     <div class="container">
 
         <div class="slide">
             <div class="item" style="background-image: url(images17/1.jpeg);">
                 <div class="content">
-                    <div class="name"> Nom du tableau : A Characterful Actor
-                                      🎨 Artiste : Jean-Baptiste Van Loo
-                        </div>
-                    <div class="des">  Portrait expressif d’un acteur au regard vivant, capturant sa personnalité théâtrale.</div>
+                    <div class="name"> La reddition de Breda</div>
+                        
+                    <div class="des"> Velázquez remettant les clés de Breda à Ambrosio Spínola le 5 juin 1625, soulignant magnanimité et honneur militaire dans la guerre de Quatre‑Vingts Ans</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(images17/2.png);">
+            <div class="item" style="background-image: url(images17/2.jpeg);">
                 <div class="content">
-                    <div class="name"> Woman of Quality</div>
-                    <div class="des"> Portrait somptueux d’une dame de qualité anglaise du XVIIᵉ siècle, richement vêtue pour souligner son rang social.</div>
+                    <div class="name"> La Bataille de Vienne</div>
+                    <div class="des">Ce tableau représente la célèbre bataille de 1683, où l'armée de Jan III Sobieski, roi de Pologne, a défait les troupes ottomanes assiégeant Vienne. La victoire de Sobieski a été un tournant crucial, marquant la fin de l'expansion ottomane en Europe centrale.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+            <div class="item" style="background-image: url(images17/3.jpeg);">
                 <div class="content">
-                    <div class="name">Iceland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">Las Meninas</div>
+                    <div class="des">Las Meninas montre la cour du roi Philippe IV avec la jeune infante entourée de ses dames d'honneur. Velázquez se peint lui-même en train de travailler, créant une illusion de perspective et de relation entre l'artiste et le spectateur.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+            <div class="item" style="background-image: url(images17/4.jpeg);">
                 <div class="content">
-                    <div class="name">Australia</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name"> Portrait de la Marquise de Pompadour</div>
+                    <div class="des">Ce portrait montre la marquise de Pompadour, maîtresse de Louis XV, dans une pose élégante et raffinée, illustrant son rôle de mécène des arts à la cour. Son regard confiant et sa tenue somptueuse reflètent son influence sur la culture du XVIIIᵉ siècle.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+            <div class="item" style="background-image: url(images17/5.jpeg);">
                 <div class="content">
-                    <div class="name">Netherland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">L'Escalier du Palais de Versailles</div>
+                    <div class="des"> Représente l'architecture opulente et l’art français de l'époque de Louis XIV, célèbre pour son architecture et son style décoratif.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+            <div class="item" style="background-image: url(images17/6.png);">
                 <div class="content">
-                    <div class="name">Ireland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">La reddition de Juliers</div>
+                    <div class="des">Rubens commémore la capitulation de la ville rhénane de Juliers aux forces catholiques d’Ambrosio Spínola, événement marquant le début renouvelé des hostilités dans la guerre de Trente Ans</div>
                 </div>
             </div>
-
+            <div class="item" style="background-image: url(images17/7.jpeg);">
+                <div class="content">
+                    <div class="name"> Portrait de Robert Walpole</div>
+                    <div class="des">Ce portrait de Robert Walpole, peint par William Hogarth, le représente en tant que Premier ministre britannique. L'œuvre illustre son autorité et son influence politique pendant sa longue période au pouvoir, marquant une étape importante dans l'histoire du gouvernement britannique au XVIIIᵉ siècle.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images17/8.png);">
+                <div class="content">
+                    <div class="name">L’Arrivée de Marie de Médicis à Marseille</div>
+                    <div class="des">Rubens transforme l’arrivée de Marie de Médicis à Marseille en 1600 en une scène triomphale où la Victoire et des Néréides l’accueillent, célébrant son entrée fastueuse en France</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images17/9.jpeg);">
+                <div class="content">
+                    <div class="name">Les Noces de Cana</div>
+                    <div class="des">Cette grande peinture montre le miracle de Jésus transformant l'eau en vin lors des noces à Cana, une œuvre majestueuse et colorée qui illustre les événements religieux de manière dynamique.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images17/10.jpeg);">
+                <div class="content">
+                    <div class="name">La Ronde de Nuit</div>
+                    <div class="des">Cette œuvre révolutionnaire montre une scène de garde urbaine avec une utilisation dramatique de la lumière et des ombres, changeant la façon dont les portraits de groupe étaient réalisés à l'époque.</div>
+                </div>
+            </div>
+            
         </div>
 
         <div class="button">
@@ -74,7 +103,17 @@
         </div>
 
     </div>
-
+    <script>
+        var music = document.getElementById("bgMusic");
+      
+        function playMusic() {
+          music.play();
+        }
+      
+        function stopMusic() {
+          music.pause();
+        }
+      </script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
