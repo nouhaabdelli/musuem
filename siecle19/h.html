@@ -23,46 +23,87 @@
     <div class="banner ">
         </div>
 
+        <audio controls id="bgMusic" src="/musique/cc.mp3" autoplay loop hidden>
+          
+        </audio>  
+        <div style="display: flex; flex-direction: column; width: 100px; height: 50%;">
+          <button onclick="playMusic()">Play Music</button>
+          <button onclick="stopMusic()">Stop Music</button>
+        </div>
 
     <div class="container">
 
         <div class="slide">
-            <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+            
+            <div class="item" style="background-image: url(images19/2.jpeg);">
                 <div class="content">
-                    <div class="name">Switzerland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">La Liberté guidant le peuple </div>
+                    <div class="des">Cette œuvre iconique célèbre la Révolution des Trois Glorieuses (27, 28 et 29 juillet 1830), un soulèvement du peuple parisien contre le roi Charles X, jugé trop autoritaire. Ces journées aboutissent à l'abdication du roi et à l'arrivée de Louis-Philippe Ier au pouvoir.
+                    Delacroix, fervent défenseur des libertés, choisit de représenter un moment épic et allégorique de la révolution en mêlant réalisme et symbolisme.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
+            <div class="item" style="background-image: url(images19/1.jpeg);">
                 <div class="content">
-                    <div class="name">Finland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">Le Sacre de Napoléon </div>
+                    <div class="des">Le 2 décembre 1804, Napoléon Bonaparte organise son sacre en grande pompe à la cathédrale Notre-Dame de Paris. Ce tableau de Jacques-Louis David, peintre officiel de l'Empereur, immortalise cet événement grandiose. Contrairement à la tradition où c’est le Pape qui couronne le souverain, Napoléon brise le protocole en se couronnant lui-même, affirmant ainsi son pouvoir absolu.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+            <div class="item" style="background-image: url(images19/3.jpeg);">
                 <div class="content">
-                    <div class="name">Iceland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">Bal du moulin de la Galette</div>
+                    <div class="des">Ce tableau capture l’ambiance festive et insouciante du Paris de la Belle Époque. Le Moulin de la Galette, situé à Montmartre, était un lieu de rencontre populaire où les Parisiens venaient danser et profiter du week-end. Renoir, fidèle à l’esprit impressionniste, cherche à saisir l’instantanéité de la vie moderne plutôt que de représenter une scène figée et académique.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+            <div class="item" style="background-image: url(images19/4.jpeg);">
                 <div class="content">
-                    <div class="name">Australia</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">La Nuit étoilée</div>
+                    <div class="des">La Nuit étoilée est une œuvre créée alors que Van Gogh est interné à l’asile de Saint-Paul-de-Mausole, à Saint-Rémy-de-Provence. Souffrant de troubles mentaux, il trouve dans la peinture une échappatoire à son tourment intérieur.
+                        L’œuvre n’est pas une simple représentation réaliste du ciel nocturne : elle est une vision intérieure, une interprétation émotionnelle du monde. Van Gogh ne peint pas ce qu'il voit, mais ce qu'il ressent.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+            <div class="item" style="background-image: url(images19/5.jpeg);">
                 <div class="content">
-                    <div class="name">Netherland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">La Gare Saint-Lazare </div>
+                    <div class="des">La Gare Saint-Lazare montre une scène animée dans une gare parisienne, avec des trains, de la vapeur, de la fumée et des voyageurs. Monet ne cherche pas à représenter les détails précis, mais plutôt l’ambiance, le mouvement et les effets de lumière créés par la vapeur et l’agitation. C’est une vision moderne et vivante de la ville en plein changement.</div>
                 </div>
             </div>
-            <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+            <div class="item" style="background-image: url(images19/6.jpeg);">
                 <div class="content">
-                    <div class="name">Ireland</div>
-                    <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                    <div class="name">L’Angélus</div>
+                    <div class="des">L'Angélus est l'une des œuvres les plus célèbres de Jean-François Millet, un peintre français du réalisme. Réalisé entre 1857 et 1859, ce tableau dépeint la scène quotidienne d'un couple de paysans en train de prier à l'appel de l'Angélus, une prière catholique traditionnelle pratiquée à l'aube, à midi et au coucher du soleil.
+                        L'œuvre fait référence à la vie simple et laborieuse des paysans de l'époque, tout en mettant en lumière la relation intime entre le travail de la terre et la spiritualité. À travers ce tableau, Millet cherche à représenter la noblesse du travail paysan et à réconcilier la religion avec la vie rurale.
+                        </div>
                 </div>
             </div>
+            <div class="item" style="background-image: url(images19/7.jpeg);">
+                <div class="content">
+                    <div class="name">Vision après le sermon </div>
+                    <div class="des">En 1888, Paul Gauguin séjourne en Bretagne, à Pont-Aven, où il cherche à s’éloigner de la modernité parisienne pour retrouver une spiritualité et un art plus authentiques. Influencé par l’art japonais et le symbolisme, il rejette le réalisme et adopte une vision simplifiée et colorée du monde, caractéristique du synthétisme.
+                        Ce tableau illustre un épisode biblique où Jacob lutte avec un ange (Genèse 32:22-32). Mais ici, Gauguin ne peint pas l’événement lui-même, mais sa vision par des Bretonnes en prière.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images19/8.jpeg);">
+                <div class="content">
+                    <div class="name">Le Radeau de la Méduse </div>
+                    <div class="des">Ce tableau s’inspire d’un drame réel survenu en 1816 : le naufrage de la frégate française La Méduse au large des côtes de l’actuelle Mauritanie. Suite à une mauvaise gestion du capitaine, un radeau de fortune est construit pour 147 naufragés. Après 13 jours d’horreur (famine, déshydratation, cannibalisme), seuls 15 survivants sont retrouvés.</div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images19/9.jpeg);">
+                <div class="content">
+                    <div class="name">Mont Sainte-Victoire</div>
+                    <div class="des">Paul Cézanne, natif d’Aix-en-Provence, est fasciné par la montagne Sainte-Victoire, un sommet qui domine la région. À partir des années 1880 jusqu’à sa mort en 1906, il la peint plus de 80 fois, explorant la lumière, les formes et la profondeur d’une manière révolutionnaire.
+                        Ce tableau fait partie de ses premières versions, où il commence à structurer la nature en formes géométriques, ouvrant la voie au cubisme.
+                        </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(images19/10.jpeg);">
+                <div class="content">
+                    <div class="name">Le Portrait du docteur Gachet </div>
+                    <div class="des">Ce tableau est l’un des derniers chefs-d’œuvre de Van Gogh, peint en juin 1890, quelques semaines avant son suicide. Il représente le docteur Paul Gachet, qui soignait Van Gogh à Auvers-sur-Oise après sa sortie de l’asile de Saint-Rémy-de-Provence.
+                        Le docteur Gachet, lui-même amateur d’art et ami des impressionnistes, partageait avec Van Gogh une sensibilité mélancolique, ce qui transparaît dans l’œuvre.</div>
+                </div>
+            </div>
+           
 
         </div>
 
@@ -72,7 +113,17 @@
         </div>
 
     </div>
-
+    <script>
+        var music = document.getElementById("bgMusic");
+      
+        function playMusic() {
+          music.play();
+        }
+      
+        function stopMusic() {
+          music.pause();
+        }
+      </script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
