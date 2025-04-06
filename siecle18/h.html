@@ -23,7 +23,14 @@
     <div class="banner ">
         </div>
 
-
+        <audio controls id="bgMusic" src="/musique/bb.mp3" autoplay loop hidden>
+          
+          </audio>  
+          <div style="display: flex; flex-direction: column; width: 100px; height: 50%;">
+            <button onclick="playMusic()">Play Music</button>
+            <button onclick="stopMusic()">Stop Music</button>
+          </div>
+          
     <div class="container">
 
         <div class="slide">
@@ -105,7 +112,17 @@
         </div>
 
     </div>
-
+    <script>
+        var music = document.getElementById("bgMusic");
+      
+        function playMusic() {
+          music.play();
+        }
+      
+        function stopMusic() {
+          music.pause();
+        }
+      </script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
