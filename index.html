@@ -283,5 +283,24 @@
 <script src="./js/carousel.js"></script> 
 <script src ="./js/main.js"></script>
     <script src="//code.tidio.co/bgtvwjoljtooqqndet7muoqib0tdyxso.js" async></script>
+    <script>
+  const form = document.getElementById('avis-form');
+  const listeAvis = document.getElementById('liste-avis');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nom = document.getElementById('nom').value.trim();
+    const commentaire = document.getElementById('commentaire').value.trim();
+
+    if (nom && commentaire) {
+      const div = document.createElement('div');
+      div.classList.add('avis');
+      div.innerHTML = `<strong>${nom}</strong><p>${commentaire}</p>`;
+      listeAvis.prepend(div);
+      form.reset();
+    }
+  });
+</script>
+
 </body>
 </html>
