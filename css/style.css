@@ -577,62 +577,38 @@ section::before{
     }
 }
 
+.nouha {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-<style>
-  .form-container {
-    max-width: 500px;
-    margin: 30px auto;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-
-  .form-container label {
+.nouha label {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
-  }
+}
 
-  .form-container input,
-  .form-container textarea {
+.nouha input, .nouha textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    margin: 5px 0 15px;
     border-radius: 6px;
-    font-family: inherit;
-  }
+    border: 1px solid #ddd;
+}
 
-  .form-container button {
-    padding: 10px 20px;
+.nouha button {
     background-color: #4CAF50;
-    border: none;
     color: white;
+    padding: 10px 20px;
+    border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-  }
+}
 
-  .form-container button:hover {
+.nouha button:hover {
     background-color: #45a049;
-  }
-</style>
-
-<div class="form-container">
-  <form action="https://formspree.io/f/myzwynqp" method="POST">
-    <label>
-      Votre email :
-      <input type="email" name="email" required>
-    </label>
-
-    <label>
-      Votre message :
-      <textarea name="message" rows="5" required></textarea>
-    </label>
-
-    <button type="submit">Envoyer</button>
-  </form>
-</div>
-
-
+}
