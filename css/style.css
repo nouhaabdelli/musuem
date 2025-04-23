@@ -476,7 +476,7 @@ section{
     background: radial-gradient(
         ellipse farthest-corner at right bottom ,
         #fedb37 0%,
-        #fdb931 8%,
+        #8c620f 8%,
         #9f7928 30%,
         #8a6e2f 40%,
         transparent 80%
@@ -577,38 +577,4 @@ section::before{
     }
 }
 
-.nouha {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
 
-.nouha label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.nouha input, .nouha textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 15px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-}
-
-.nouha button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.nouha button:hover {
-    background-color: #45a049;
-}
