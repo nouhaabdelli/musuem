@@ -577,3 +577,62 @@ section::before{
     }
 }
 
+
+<style>
+  .form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<div class="form-container">
+  <form action="https://formspree.io/f/myzwynqp" method="POST">
+    <label>
+      Votre email :
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Votre message :
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</div>
+
+
