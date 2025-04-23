@@ -45,7 +45,11 @@
 </ul>
 <a href="#" class="menu"><ion-icon name="grid-outline"></ion-icon></a>
 </header>
-
+  <!-- modify this form HTML and place wherever you want your form -->
+  <div class="feedback-form" id="feedbackForm">
+    <!-- Le code du formulaire Formspree ici -->
+  </div>
+  
 
 
 <!-- Notificatins -->
@@ -191,55 +195,8 @@
 </main>
 
 </section> 
-<!-- Collection Section -->
-<section id="collection" class="collection">
-   <!-- modify this form HTML and place wherever you want your form -->
-   <div class="nouha">
-    <h2>Donnez-nous votre avis</h2>
-    <form action="https://formspree.io/f/myzwynqp" method="POST">
-      <label for="email">Votre email :</label>
-      <input type="email" name="email" id="email" required>
 
-      <label for="message">Votre commentaire :</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
 
-      <button type="submit">Envoyer</button>
-    </form>
-  </div>
-    <video class="video-slide" src="/videos/aaaa.mp4" autoplay  loop > </video>
-    <div class="apropos-text1">
-            <P>Aujourd’hui, notre Musée Virtuel vous invite à un voyage immersif où l’histoire et la technologie se rencontrent. 
-            Plongez dans un univers artistique fascinant, explorez des chefs-d’œuvre numériques interactifs et redécouvrez l’héritage des grands mouvements artistiques sous un nouveau jour    . 
-           
-</P> 
-</div>
-
-<div class="apropos-text2">
-
-        <p> Que vous soyez passionné d’art, curieux ou simplement en quête d’évasion, notre musée vous invite à une exploration sensorielle où l’émotion et l’innovation 
-            se mêlent pour donner vie à des chefs-d'œuvre numériques.
-        </p>
-        <a class="content-btn" href="https://www.artsteps.com/view/67b3517509fd55a7d21001f2?fbclid=IwY2xjawJx9QpleHRuA2FlbQIxMAABHg8cY4Gt0o8Y0RZvAbj_bUKK1XVGhNGwTBIhs5dHsqBYa-HgNgsJi3akwoK-_aem_w2mSH15C5OIOXcohTVF_BA">Visit Our Museum </a> 
-    </div>
-</section>
-<!-- Collection Section -->
-<section id="collection" class="collection">
-    <video class="video-slide" src="/videos/aaaa.mp4" autoplay  loop > </video>
-    <div class="apropos-text1">
-            <P>Aujourd’hui, notre Musée Virtuel vous invite à un voyage immersif où l’histoire et la technologie se rencontrent. 
-            Plongez dans un univers artistique fascinant, explorez des chefs-d’œuvre numériques interactifs et redécouvrez l’héritage des grands mouvements artistiques sous un nouveau jour    . 
-           
-</P> 
-</div>
-
-<div class="apropos-text2">
-
-        <p> Que vous soyez passionné d’art, curieux ou simplement en quête d’évasion, notre musée vous invite à une exploration sensorielle où l’émotion et l’innovation 
-            se mêlent pour donner vie à des chefs-d'œuvre numériques.
-        </p>
-        <a class="content-btn" href="https://www.artsteps.com/view/67b3517509fd55a7d21001f2?fbclid=IwY2xjawJx9QpleHRuA2FlbQIxMAABHg8cY4Gt0o8Y0RZvAbj_bUKK1XVGhNGwTBIhs5dHsqBYa-HgNgsJi3akwoK-_aem_w2mSH15C5OIOXcohTVF_BA">Visit Our Museum </a> 
-    </div>
-</section>
     <!-- Collection Section -->
 <section id="collection" class="collection">
     <video class="video-slide" src="/videos/aaaa.mp4" autoplay  loop > </video>
@@ -274,7 +231,44 @@
 <script src ="./js/main.js"></script>
 <script src="//code.tidio.co/bgtvwjoljtooqqndet7muoqib0tdyxso.js" async></script>
 
-
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/myzwynqp",
+    title: "T’as cliqué, t’as liké… maintenant feedback ! 🖱️❤️",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "Ton avis, c’est de l’art aussi 🎭🗣️",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#8c620f"
+      },
+      button: {
+        backgroundColor: "#8c620f",
+        position: "fixed",
+        left: "250px",
+        bottom: "0px",
+        right: "auto"
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
