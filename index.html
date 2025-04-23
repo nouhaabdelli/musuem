@@ -266,7 +266,14 @@
         bottom: "0px",
         right: "auto"
       }
+    },    // 👇👇 Voici le message de confirmation personnalisé
+  onResponse: function (ok, setStatus) {
+    if (ok) {
+      setStatus("Merci beaucoup  artiste ! 🎨 Ton feedback illumine notre musée virtuel. ");
+    } else {
+      setStatus("Oups ! Une erreur est survenue. Essaie encore !");
     }
+  }
   });
 </script>
 
