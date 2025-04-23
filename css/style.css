@@ -2,7 +2,8 @@
 
 
 /* General Setting */
-* {
+* { max-width: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +14,6 @@
 }
 
 body {
-    max-width: 100%;
-    width: auto;
     position: relative;
     background: #000000;
     font-family: 'Roboto', sans-serif;
